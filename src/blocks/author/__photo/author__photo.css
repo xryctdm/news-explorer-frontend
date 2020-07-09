@@ -1,0 +1,33 @@
+.author__photo {
+    margin: 88px 0 80px 104px;
+    max-width: 464px;
+    max-height: 464px;
+}
+
+@media screen and (max-width: 1200px) {
+    .author__photo {
+        max-width: 348px;
+        max-height: 348px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .author__photo {
+        max-width: 232px;
+        max-height: 232px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .author__photo {
+        margin: 61px 0 61px 40px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .author__photo {
+        margin: 32px auto;
+        max-width: 272px;
+        max-height: 272px;
+    }
+}

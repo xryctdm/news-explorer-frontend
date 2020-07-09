@@ -1,0 +1,9 @@
+.popup__link {
+    text-decoration: none;
+    color: #2F71E5;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}

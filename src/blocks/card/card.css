@@ -1,0 +1,19 @@
+@import url("./__image/card__image.css");
+@import url("./__text-content/card__text-content.css");
+@import url("./__date/card__date.css");
+@import url("./__title/card__title.css");
+@import url("./__text/card__text.css");
+@import url("./__source/card__source.css");
+@import url("./__bookmark/card__bookmark.css");
+@import url("./__bookmark-pointer/card__bookmark-pointer.css");
+@import url("./__submenu/card__submenu.css");
+@import url("./__submenu-text/card__submenu-text.css");
+@import url("./__tag/card__tag.css");
+
+.card {
+    /*border: 1px red solid;*/
+    background: #FFFFFF;
+    border-radius: 16px;
+    cursor: pointer;
+    position: relative;
+}

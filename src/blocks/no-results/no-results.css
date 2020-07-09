@@ -1,0 +1,11 @@
+@import url("./__container/no-results__container.css");
+@import url("./__icon/no-results__icon.css");
+@import url("./__title/no-results__title.css");
+@import url("./__text/no-results__text.css");
+
+.no-results {
+	display: none;
+	margin: 0;
+	height: 374px;
+    background: #F5F6F7;
+}

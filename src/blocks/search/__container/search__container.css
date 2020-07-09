@@ -1,0 +1,17 @@
+.search__container {
+    max-width: 608px;
+    margin-top: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    .search__container {
+        margin-top: 38px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .search__container {
+        margin-top: 30px;
+        height: 418px;
+    }
+}

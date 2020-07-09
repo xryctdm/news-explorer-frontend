@@ -1,0 +1,11 @@
+.search-resume__title {
+    margin-top: 28px;
+    max-width: 530px;
+}
+
+@media screen and (max-width: 768px) {
+    .search-resume__title {
+        margin-top: 16px;
+        max-width: 336px;
+    }
+}

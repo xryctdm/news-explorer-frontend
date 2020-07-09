@@ -1,0 +1,13 @@
+.header__nav-button-content {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 576px) {
+    .header__nav-button-content {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+}

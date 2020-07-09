@@ -1,0 +1,6 @@
+.header__popup-title-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #B6BCBF;
+    padding: 16px;
+}

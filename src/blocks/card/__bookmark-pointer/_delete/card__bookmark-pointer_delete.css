@@ -1,0 +1,5 @@
+.card__bookmark-pointer_delete {
+    background: url("../../../../images/trash.svg");
+    width: 24px;
+    height: 24px;
+}

@@ -1,0 +1,18 @@
+.card__text-content {
+    margin: 20px 24px;
+    height: 260px;
+    position: relative;
+}
+
+@media screen and (max-width: 820px) {
+    .card__text-content {
+        margin: 16px;
+        height: 238px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card__text-content {
+        height: 212px;
+    }
+}

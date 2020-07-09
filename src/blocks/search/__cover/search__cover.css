@@ -1,0 +1,11 @@
+.search__cover {
+    background: url('../../../images/cover.png');
+    background-size: cover;
+}
+
+@media screen and (max-width: 320px) {
+    .search__cover {
+        background: url('../../../images/cover-mobile.png');
+        background-size: cover;
+    }
+}

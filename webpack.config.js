@@ -69,8 +69,15 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: false,
+      hash: true,
       template: './src/index.html',
       filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: true,
+      template: './src/cards.html',
+      filename: 'cards.html'
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({

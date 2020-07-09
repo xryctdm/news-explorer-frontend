@@ -1,0 +1,10 @@
+.footer__text-link-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+    .footer__text-link-container {
+        flex-direction: column;
+    }
+}

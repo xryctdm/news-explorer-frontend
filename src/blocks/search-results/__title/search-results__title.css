@@ -1,0 +1,15 @@
+.search-results__title {
+    margin-bottom: 64px;
+}
+
+@media screen and (max-width: 820px) {
+    .search-results__title {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .search-results__title {
+        margin-bottom: 24px;
+    }
+}

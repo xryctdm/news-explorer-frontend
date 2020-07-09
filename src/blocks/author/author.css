@@ -1,0 +1,15 @@
+@import url("../author/__photo/author__photo.css");
+@import url("../author/__text/author__text.css");
+@import url("../author/__title/author__title.css");
+@import url("../author/__container/author__container.css");
+
+.author {
+    background: #FFFFFF;
+    display: flex;
+}
+
+@media screen and (max-width: 576px) {
+    .author {
+        flex-direction: column;
+    }
+}

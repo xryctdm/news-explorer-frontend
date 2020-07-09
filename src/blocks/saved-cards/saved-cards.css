@@ -1,0 +1,12 @@
+.saved-cards {
+    padding-top: 62px;
+    padding-bottom: 62px;
+    background: #F5F6F7;
+}
+
+@media screen and (max-width: 1024px) {
+    .saved-cards {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
