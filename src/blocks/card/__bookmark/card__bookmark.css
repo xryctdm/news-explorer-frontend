@@ -1,0 +1,42 @@
+.card__bookmark {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__bookmark:hover .card__bookmark-pointer_normal {
+    background: url("../../../images/hover.svg");
+}
+
+.card__bookmark:hover .card__bookmark-pointer_delete {
+    background: url("../../../images/trash_hover.svg");
+}
+
+.card__bookmark:hover .card__submenu {
+    display: block;
+}
+
+@media screen and (max-width: 820px) {
+    .card__bookmark {
+        top: 8px;
+        right: 8px;
+    }
+
+    .card__bookmark:hover .card__submenu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card__bookmark {
+        top: 16px;
+        right: 16px;
+    }
+}

@@ -1,0 +1,10 @@
+.card__submenu {
+    display: none;
+    position: absolute;
+    right: 45px;
+    width: max-content;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 0 12px;
+}

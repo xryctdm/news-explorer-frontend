@@ -1,0 +1,26 @@
+.footer__text-link {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    
+    text-align: center;
+    
+    color: #1A1B22;
+    text-decoration-line: none;
+    margin-right: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer__text-link {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer__text-link {
+        text-align: left;
+        margin-bottom: 35px;
+    }
+}

@@ -1,0 +1,13 @@
+@import url("./_type-input/error_type-input.css");
+@import url("./_type-reg/error_type-reg.css");
+
+.error {
+    min-height: 14px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FF0000;
+    
+}

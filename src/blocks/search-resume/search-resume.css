@@ -1,0 +1,13 @@
+@import url("./__title/search-resume__title.css");
+@import url("./__subtitle/search-resume__subtitle.css");
+@import url("./__text/search-resume__text.css");
+
+.search-resume {
+    padding: 40px 104px 56px;
+}
+
+@media screen and (max-width: 768px) {
+    .search-resume {
+        padding: 24px 40px 32px;
+    }
+}

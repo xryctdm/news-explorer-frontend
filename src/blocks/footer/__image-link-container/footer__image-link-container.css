@@ -1,0 +1,4 @@
+.footer__image-link-container {
+    display: flex;
+    justify-content: space-between;
+}

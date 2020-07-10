@@ -1,0 +1,35 @@
+.author__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 139px;
+    margin-left: 56px;
+    max-width: 600px;
+    margin-right: 216px;
+}
+
+@media screen and (max-width: 1289px) {
+    .author__container {
+        margin-right: 150px;
+        margin-top: 88px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .author__container {
+        margin-right: 70px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .author__container {
+        margin-top: 40px;
+        margin-right: 40px;
+        margin-left: 32px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .author__container {
+        margin: 24px 16px 45px;
+    }
+}

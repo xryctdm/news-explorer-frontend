@@ -1,0 +1,19 @@
+.card__image {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    height: 272px;
+    background-size: cover;
+    background-image: url(../../../images/image_08.png);
+}
+
+@media screen and (max-width: 820px) {
+    .card__image {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card__image {
+        height: 196px;
+    }
+}
