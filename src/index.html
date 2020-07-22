@@ -17,26 +17,32 @@
         <p class = "header__logo">NewsExplorer</p>
         <nav class = "header__navigation">
             <a href = "./index.html" class = "header__nav-item">Главная</a>
-            <a href = "./cards.html" class = "header__nav-item">Сохранённые статьи</a>
-            <button class = "header__nav-button" type="button">
-                <span class = "header__nav-button-content">Грета</span>
+            <a href = "./cards.html" class = "header__nav-item header__nav-item_hidden">Сохранённые статьи</a>
+            <button class = "header__nav-button header__nav-button_hidden profile" type="button">
+                <span class = "header__nav-button-content">UserName</span>
                 <img class = "header__logout-icon" src = "<%=require('./images/logout.svg')%>" alt = "иконка выхода светлая">
             </button>
+            <button class = "header__nav-button auth" type="button">
+              <span class = "header__nav-button-content">Авторизоваться</span>
+          </button>
         </nav>
         <img class = "header__menu-icon" src = "<%=require('./images/menu_light.svg')%>" alt = "иконка меню светлая">
-        <div class = "header__popup">
+        <div class = "header__popup header__popup_close-state">
             <div class = "header__popup-content">
                 <div class = "header__popup-title-container">
                     <h3 class = "header__logo header__popup-title">NewsExplorer</h3>
-                    <img src = "<%=require('./images/close.svg')%>" alt = "крестик закрытия" class="header__popup-close">
+                    <img src = "<%=require('./images/close.svg')%>" alt = "крестик закрытия" class="header__popup-close-button">
                 </div>
                 <nav class = "header__popup-nav">
                     <a href = "./index.html" class = "header__nav-item">Главная</a>
-                    <a href = "./cards.html" class = "header__nav-item">Сохранённые статьи</a>
-                    <button class = "header__nav-button" type="button">
-                        <span class = "header__nav-button-content">Грета</span>
+                    <a href = "./cards.html" class = "header__nav-item header__nav-item_hidden">Сохранённые статьи</a>
+                    <button class = "header__nav-button header__nav-button_hidden profile" type="button">
+                        <span class = "header__nav-button-content">UserName</span>
                         <img class = "header__logout-icon" src = "<%=require('./images/logout.svg')%>" alt = "иконка выхода">
                     </button>
+                    <button class = "header__nav-button auth" type="button">
+                      <span class = "header__nav-button-content">Авторизоваться</span>
+                  </button>
                 </nav>
             </div>
         </div>
@@ -173,11 +179,11 @@
 
                 <form class="popup__form" name="login" novalidate>
                     <p class = "popup__input-title">Email</p>
-                    <input type = "email" name = "email" class = "popup__input" placeholder = "Введите почту">
+                    <input type = "email" name = "email" class = "popup__input" minlength="2" maxlength="30" placeholder = "Введите почту" required>
                     <p class = "error error_type-input">Неправильный формат email</p>
 
                     <p class = "popup__input-title">Пароль</p>
-                    <input type="password" name="password" class="popup__input" placeholder="Введите пароль">
+                    <input type="password" name="password" class="popup__input" placeholder="Введите пароль" minlength="2" maxlength="30" required>
                     <p class="error error_type-input"></p>
 
                     <button type = "button" class="button popup__button popup__button_disabled" disabled>Войти</button>
@@ -193,22 +199,22 @@
 
                 <form class="popup__form" name="registration" novalidate>
                     <p class = "popup__input-title">Email</p>
-                    <input type = "email" name = "email" class = "popup__input" placeholder = "Введите почту">
+                    <input type = "email" name = "email" class = "popup__input" placeholder = "Введите почту" minlength="2" maxlength="30" required>
                     <p class = "error error_type-input">Неправильный формат email</p>
 
                     <p class = "popup__input-title">Пароль</p>
-                    <input type="password" name="password" class="popup__input" placeholder="Введите пароль">
+                    <input type="password" name="password" class="popup__input" placeholder="Введите пароль" minlength="2" maxlength="30" required>
                     <p class="error error_type-input"></p>
 
                     <p class = "popup__input-title">Имя</p>
-                    <input type="text" name="name" class="popup__input" placeholder="Введите своё имя">
+                    <input type="text" name="name" class="popup__input" placeholder="Введите своё имя" minlength="2" maxlength="30" required>
                     <p class="error error_type-input"></p>
 
                     <p class="error error_type-reg">Такой пользователь уже есть</p>
 
                     <button type = "button" class="button popup__button popup__button_disabled" disabled>Зарегистрироваться</button>
                 </form>
-                <p class = "popup__bottom-text">или <button class="popup__link">Войти</button></p>
+                <p class = "popup__bottom-text">или <button class="popup__link reg">Войти</button></p>
             </div>
         </section>
 

@@ -1,3 +1,5 @@
+@import url("./_close-state/header__popup_close-state.css");
+
 .header__popup {
     display: none;
 }
@@ -11,10 +13,9 @@
         height: 100%;
         background-color: rgba(0, 0, 0, .5);
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         z-index: 100;
-
     }
 }
 

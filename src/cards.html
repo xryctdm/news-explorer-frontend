@@ -17,30 +17,36 @@
     <header class="header">
         <p class = "header__logo header__logo_dark">NewsExplorer</p>
         <nav class = "header__navigation">
-            <a href = "./index.html" class = "header__nav-item header__nav-item_dark">Главная</a>
-            <a href = "./cards.html" class = "header__nav-item header__nav-item_dark">Сохранённые статьи</a>
-            <button class = "header__nav-button header__nav-button_dark" type="button">
-                <span class = "header__nav-button-content">Грета</span>
-                <img class = "header__logout-icon" src = "<%=require('./images/logout_dark.svg')%>" alt = "иконка выхода светлая">
-            </button>
-        </nav>
+          <a href = "./index.html" class = "header__nav-item header__nav-item_dark">Главная</a>
+          <a href = "./cards.html" class = "header__nav-item  header__nav-item_dark header__nav-item_hidden">Сохранённые статьи</a>
+          <button class = "header__nav-button header__nav-button_dark header__nav-button_hidden profile" type="button">
+              <span class = "header__nav-button-content ">UserName</span>
+              <img class = "header__logout-icon" src = "<%=require('./images/logout_dark.svg')%>" alt = "иконка выхода светлая">
+          </button>
+          <button class = "header__nav-button auth" type="button">
+            <span class = "header__nav-button-content">Авторизоваться</span>
+        </button>
+      </nav>
         <img class = "header__menu-icon" src = "<%=require('./images/menu_dark.svg')%>" alt = "иконка меню темная">
-        <div class = "header__popup">
-            <div class = "header__popup-content">
-                <div class = "header__popup-title-container">
-                    <h3 class = "header__logo header__popup-title">NewsExplorer</h3>
-                    <img src = "<%=require('./images/close.svg')%>" alt = "крестик закрытия" class="header__popup-close">
-                </div>
-                <nav class = "header__popup-nav">
-                    <a href = "./index.html" class = "header__nav-item">Главная</a>
-                    <a href = "./cards.html" class = "header__nav-item">Сохранённые статьи</a>
-                    <button class = "header__nav-button" type="button">
-                        <span class = "header__nav-button-content">Грета</span>
-                        <img class = "header__logout-icon" src = "<%=require('./images/logout.svg')%>" alt = "иконка выхода">
+        <div class = "header__popup header__popup_close-state">
+          <div class = "header__popup-content">
+              <div class = "header__popup-title-container">
+                  <h3 class = "header__logo header__popup-title">NewsExplorer</h3>
+                  <img src = "<%=require('./images/close.svg')%>" alt = "крестик закрытия" class="header__popup-close-button">
+              </div>
+              <nav class = "header__popup-nav">
+                  <a href = "./index.html" class = "header__nav-item">Главная</a>
+                  <a href = "./cards.html" class = "header__nav-item header__nav-item_hidden">Сохранённые статьи</a>
+                  <button class = "header__nav-button header__nav-button_hidden profile" type="button">
+                      <span class = "header__nav-button-content">UserName</span>
+                      <img class = "header__logout-icon" src = "<%=require('./images/logout.svg')%>" alt = "иконка выхода">
                   </button>
-                </nav>
-            </div>
-        </div>
+                  <button class = "header__nav-button auth" type="button">
+                    <span class = "header__nav-button-content">Авторизоваться</span>
+                </button>
+              </nav>
+          </div>
+      </div>
     </header>
 
     <main>
