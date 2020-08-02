@@ -13,6 +13,13 @@
 
 [ссылка на проект](https://xryctdm.github.io/news-explorer-frontend)
 
+## Ссылки на сервер для проекта
+
+* https://api.xryctdm-news-explorer.tk
+
+
+* http://84.201.173.24
+
 ## Установка проекта
 
 [Установите node.js](https://nodejs.org/en/download)
