@@ -1,5 +1,7 @@
 @import url("./_dark/header__nav-item_dark.css");
 @import url("./_hidden/header__nav-item_hidden.css");
+@import url("./_main/header__nav-item_main.css");
+@import url("./_saved-pages/header__nav-item_saved-pages.css");
 
 .header__nav-item {
     font-family: 'Roboto', Arial, sans-serif;
@@ -14,24 +16,10 @@
     margin-right: 34px;
 }
 
-.header__nav-item:first-child {
-    margin-top: 28px;
-    padding-bottom: 26px;
-    color: #FFFFFF;
-    border-bottom: 3px solid #FFFFFF;
-}
-
 @media screen and (max-width: 768px) {
     .header__nav-item {
         margin-right: 16px;
         font-size: 16px;
-    }
-
-    .header__nav-item:first-child {
-        margin-top: 21px;
-        padding-bottom: 19px;
-        color: #FFFFFF;
-        border-bottom: 3px solid #FFFFFF;
     }
 }
 
@@ -41,12 +29,5 @@
         font-size: 18px;
         line-height: 56px;
         color: #FFFFFF;
-    }
-
-    .header__nav-item:first-child {
-        margin: 0;
-        padding: 0;
-        color: #FFFFFF;
-        border: none;
     }
 }

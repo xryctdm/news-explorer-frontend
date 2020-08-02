@@ -1,13 +1,14 @@
 export default class Header {
-    constructor(props) {
-      this.isLoggedIn  = props.isLoggedIn;
-      this.userName = props.userName;
-      this.color = props.color;
+    constructor(user, afterClickLogout) {
+      this.user = user;
+      this.afterClickLogout = afterClickLogout;
+
+      this.addEvents();
     }
 
     render() {
-      if (this.isLoggedIn) {
-        document.querySelectorAll('.header__nav-item_hidden').forEach(function(element) {
+      if (!this.user.isGuest()) {
+        document.querySelectorAll('.header__nav-item.saved-pages').forEach(function(element) {
           element.classList.remove('header__nav-item_hidden');
         });
         document.querySelectorAll('.header__nav-button.profile').forEach(function(element) {
@@ -17,8 +18,32 @@ export default class Header {
           element.classList.add('header__nav-button_hidden');
         });
         document.querySelectorAll('.header__nav-button-content').forEach((element) => {
-          element.textContent = this.userName;
+          element.textContent = this.user.getName();
         });
+    } else {
+      document.querySelectorAll('.header__nav-item.saved-pages').forEach(function(element) {
+        element.classList.add('header__nav-item_hidden');
+      });
+      document.querySelectorAll('.header__nav-button.profile').forEach(function(element) {
+        element.classList.add('header__nav-button_hidden');
+      });
+      document.querySelectorAll('.header__nav-button.auth').forEach(function(element) {
+        element.classList.remove('header__nav-button_hidden');
+      });
+      document.querySelectorAll('.header__nav-button-content').forEach((element) => {
+        element.textContent = 'Авторизоваться';
+      });
     }
+  }
+
+  addEvents() {
+    document.querySelectorAll('.header__nav-button.profile').forEach((element) => {
+        element.addEventListener('click', () => {
+          this.user.logout();
+          this.render();
+          this.afterClickLogout();
+        })
+      }
+    )
   }
 }

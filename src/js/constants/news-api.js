@@ -1,5 +1,5 @@
 const NEWS_API_KEY = '663b5b2e1c1848bbbb13c3e434dc7190';
-const NEWS_API_URL = 'https://newsapi.org/v2/top-headlines';
+const NEWS_API_URL = 'https://praktikum.tk/news/v2/everything';
 
 
-export default { NEWS_API_KEY, NEWS_API_URL };
+export default { key: NEWS_API_KEY, url: NEWS_API_URL };

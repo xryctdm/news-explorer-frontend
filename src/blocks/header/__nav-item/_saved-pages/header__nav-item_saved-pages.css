@@ -1,0 +1,24 @@
+.header__nav-item.header__nav-item_saved-pages {
+  margin-top: 28px;
+  padding-bottom: 26px;
+  color: #1A1B22;
+  border-bottom: 3px solid #1A1B22;
+}
+
+@media screen and (max-width: 768px) {
+  .header__nav-item.header__nav-item_saved-pages {
+      margin-top: 21px;
+      padding-bottom: 19px;
+      color: #1A1B22;
+      border-bottom: 3px solid #1A1B22;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header__nav-item.header__nav-item_saved-pages {
+      margin: 0;
+      padding: 0;
+      color: #1A1B22;
+      border: none;
+  }
+}

@@ -1,5 +1,5 @@
 .search__input-text {
-    max-width: 376px;
+    width: 376px;
     height: 22px;
     font-family: 'Roboto', Arial, sans-serif;
     font-style: normal;
@@ -16,5 +16,6 @@
 @media screen and (max-width: 768px) {
     .search__input-text {
         margin-top: 17px;
+        width: 235px;
     }
 }

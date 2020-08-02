@@ -6,6 +6,7 @@
 
 - HTML
 - CSS
+- JS
 - Webpack
 
 ## URL

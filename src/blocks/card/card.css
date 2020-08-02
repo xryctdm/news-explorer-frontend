@@ -9,6 +9,8 @@
 @import url("./__submenu/card__submenu.css");
 @import url("./__submenu-text/card__submenu-text.css");
 @import url("./__tag/card__tag.css");
+@import url("./__link/card__link.css");
+@import url("./__template/card__template.css");
 
 .card {
     /*border: 1px red solid;*/
@@ -16,4 +18,5 @@
     border-radius: 16px;
     cursor: pointer;
     position: relative;
+    text-decoration: none;
 }

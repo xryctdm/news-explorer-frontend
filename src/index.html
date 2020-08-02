@@ -16,8 +16,8 @@
     <header class="header">
         <p class = "header__logo">NewsExplorer</p>
         <nav class = "header__navigation">
-            <a href = "./index.html" class = "header__nav-item">Главная</a>
-            <a href = "./cards.html" class = "header__nav-item header__nav-item_hidden">Сохранённые статьи</a>
+            <a href = "./index.html" class = "header__nav-item header__nav-item_main">Главная</a>
+            <a href = "./cards.html" class = "header__nav-item  saved-pages header__nav-item_hidden">Сохранённые статьи</a>
             <button class = "header__nav-button header__nav-button_hidden profile" type="button">
                 <span class = "header__nav-button-content">UserName</span>
                 <img class = "header__logout-icon" src = "<%=require('./images/logout.svg')%>" alt = "иконка выхода светлая">
@@ -35,7 +35,7 @@
                 </div>
                 <nav class = "header__popup-nav">
                     <a href = "./index.html" class = "header__nav-item">Главная</a>
-                    <a href = "./cards.html" class = "header__nav-item header__nav-item_hidden">Сохранённые статьи</a>
+                    <a href = "./cards.html" class = "header__nav-item saved-pages header__nav-item_hidden">Сохранённые статьи</a>
                     <button class = "header__nav-button header__nav-button_hidden profile" type="button">
                         <span class = "header__nav-button-content">UserName</span>
                         <img class = "header__logout-icon" src = "<%=require('./images/logout.svg')%>" alt = "иконка выхода">
@@ -52,21 +52,16 @@
         <div class = search__container>
         <h1 class = "section-title search__title">Что в мире творится?</h1>
         <p class = "section-text search__text">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
-        <form action="#" class = "search__input">
-            <input type="text" placeholder="Введите тему новости" name="search" class = "search__input-text">
-            <button class = "button search__button" type="button">Искать</button>
+        <form id = "search-form" action="#" class = "search__input">
+            <input id = "search-input" type="text" placeholder="Введите тему новости" name="search" class = "search__input-text">
+            <button id = "search-button" class = "button search__button" type="button">Искать</button>
         </form>
-
+        <p id = "error-search" class="error search__error"></p>
         </div>
     </section>
     </div>
     <main>
-        <section class = "preloader">
-            <div class = "preloader__container">
-                <i class="preloader__circle"></i>
-                <p class = "preloader__text">Идет поиск новостей...</p>
-            </div>
-        </section>
+
 
         <section class = no-results>
             <div class = "no-results__container">
@@ -80,83 +75,23 @@
             <div class = "search-results__container">
                 <h2 class = "section-title search-results__title">Результаты поиска</h2>
                 <div class = "cards-container">
-                    <div class = "card">
-                        <div class = "card__bookmark">
-                            <div class = "card__bookmark-pointer card__bookmark-pointer_normal"></div>
-                            <div class = "card__submenu">
-                                <p class = "card__submenu-text">Войдите, чтобы сохранять статьи</p>
-                            </div>
-                        </div>
 
-                        <figure class = "card__image"></figure>
-                        <div class = "card__text-content">
-                            <p class = "card__date">2 августа, 2019</p>
-                            <h3 class = "card__title">Национальное достояние – парки</h3>
-                            <p class = "card__text">В 2016 году Америка отмечала важный юбилей:
-                                сто лет назад здесь начала складыв...
-                            </p>
-                            <cite class = "card__source">Лента.ру</cite>
-                        </div>
-                    </div>
-                    <div class = "card">
-                        <div class = "card__bookmark">
-                            <div class = "card__bookmark-pointer card__bookmark-pointer_marked"></div>
-                            <div class = "card__submenu">
-                                <p class = "card__submenu-text">Войдите, чтобы сохранять статьи</p>
-                            </div>
-                        </div>
 
-                        <figure class = "card__image"></figure>
-                        <div class = "card__text-content">
-                            <p class = "card__date">2 августа, 2019</p>
-                            <h3 class = "card__title">Лесные огоньки: история одной фотографии</h3>
-                            <p class = "card__text">В 2016 году Америка отмечала важный юбилей:
-                                сто лет назад здесь начала складыв...
-                            </p>
-                            <cite class = "card__source">Медуза</cite>
-                        </div>
-                    </div>
 
-                    <div class = "card">
-                        <div class = "card__bookmark">
-                            <div class = "card__bookmark-pointer card__bookmark-pointer_normal"></div>
-                            <div class = "card__submenu">
-                                <p class = "card__submenu-text">Войдите, чтобы сохранять статьи</p>
-                            </div>
-                        </div>
 
-                        <figure class = "card__image"></figure>
-                        <div class = "card__text-content">
-                            <p class = "card__date">2 августа, 2019</p>
-                            <h3 class = "card__title">Национальное достояние – парки</h3>
-                            <p class = "card__text">В 2016 году Америка отмечала важный юбилей:
-                                сто лет назад здесь начала складыв...
-                            </p>
-                            <cite class = "card__source">Риа</cite>
-                        </div>
-                    </div>
-                    <div class = "card">
-                        <div class = "card__bookmark">
-                            <div class = "card__bookmark-pointer card__bookmark-pointer_normal"></div>
-                            <div class = "card__submenu">
-                                <p class = "card__submenu-text">Войдите, чтобы сохранять статьи</p>
-                            </div>
-                        </div>
 
-                        <figure class = "card__image"></figure>
-                        <div class = "card__text-content">
-                            <p class = "card__date">2 августа, 2019</p>
-                            <h3 class = "card__title">Национальное достояние – парки</h3>
-                            <p class = "card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад
-                            здесь начала складыв...
-                            </p>
-                            <cite class = "card__source">Лента.ру</cite>
-                        </div>
-                    </div>
+
                 </div>
                 <button type = "button" class = "button search-results__button">Показать еще</button>
             </div>
         </section>
+
+        <section class = "preloader">
+          <div class = "preloader__container">
+              <i class="preloader__circle"></i>
+              <p class = "preloader__text">Идет поиск новостей...</p>
+          </div>
+      </section>
 
         <section class = "author">
             <img class = "author__photo" src = "<%=require('./images/image-03.png')%>" alt = "фото автора">
@@ -177,18 +112,20 @@
                 <img src = "<%=require('./images/close.svg')%>" alt = "крестик закрытия" class="popup__close">
                 <h3 class = "popup__title">Вход</h3>
 
-                <form class="popup__form" name="login" novalidate>
+                <form id = "login-form" class="popup__form" name="login" novalidate>
                     <p class = "popup__input-title">Email</p>
-                    <input type = "email" name = "email" class = "popup__input" minlength="2" maxlength="30" placeholder = "Введите почту" required>
-                    <p class = "error error_type-input">Неправильный формат email</p>
+                    <input id = "login-email" type = "email" name = "email" class = "popup__input" minlength="2" maxlength="30" placeholder = "Введите почту" required>
+                    <p id = "error-login-email" class = "error error_type-input"></p>
 
                     <p class = "popup__input-title">Пароль</p>
-                    <input type="password" name="password" class="popup__input" placeholder="Введите пароль" minlength="2" maxlength="30" required>
-                    <p class="error error_type-input"></p>
+                    <input id = "login-password" type="password" name="password" class="popup__input" placeholder="Введите пароль" minlength="2" maxlength="30" required>
+                    <p id = "error-login-password" class="error error_type-input"></p>
 
-                    <button type = "button" class="button popup__button popup__button_disabled" disabled>Войти</button>
+                    <p id = "error-login-form" class="error error_type-reg"></p>
+
+                    <button id = "login-button" type = "button" class="button popup__button popup__button_disabled" disabled>Войти</button>
                 </form>
-                <p class = "popup__bottom-text">или <button class="popup__link">Зарегистрироваться</button></p>
+                <p class = "popup__bottom-text">или <button class="popup__link login">Зарегистрироваться</button></p>
             </div>
         </section>
 
@@ -197,22 +134,22 @@
                 <img src = "<%=require('./images/close.svg')%>" alt = "крестик закрытия" class="popup__close">
                 <h3 class = "popup__title">Регистрация</h3>
 
-                <form class="popup__form" name="registration" novalidate>
+                <form id = "registration-form" class="popup__form" name="registration" novalidate>
                     <p class = "popup__input-title">Email</p>
-                    <input type = "email" name = "email" class = "popup__input" placeholder = "Введите почту" minlength="2" maxlength="30" required>
-                    <p class = "error error_type-input">Неправильный формат email</p>
+                    <input id = "registration-email" type = "email" name = "email" class = "popup__input" placeholder = "Введите почту" minlength="2" maxlength="30" required>
+                    <p id = "error-registration-email" class = "error error_type-input"></p>
 
                     <p class = "popup__input-title">Пароль</p>
-                    <input type="password" name="password" class="popup__input" placeholder="Введите пароль" minlength="2" maxlength="30" required>
-                    <p class="error error_type-input"></p>
+                    <input id = "registration-password" type="password" name="password" class="popup__input" placeholder="Введите пароль" minlength="2" maxlength="30" required>
+                    <p id = "error-registration-password" class="error error_type-input"></p>
 
                     <p class = "popup__input-title">Имя</p>
-                    <input type="text" name="name" class="popup__input" placeholder="Введите своё имя" minlength="2" maxlength="30" required>
-                    <p class="error error_type-input"></p>
+                    <input id = "registration-name" type="text" name="name" class="popup__input" placeholder="Введите своё имя" minlength="2" maxlength="30" required>
+                    <p id = "error-registration-name" class="error error_type-input"></p>
 
-                    <p class="error error_type-reg">Такой пользователь уже есть</p>
+                    <p id = "error-registration-form" class="error error_type-reg"></p>
 
-                    <button type = "button" class="button popup__button popup__button_disabled" disabled>Зарегистрироваться</button>
+                    <button id = "registration-button" type = "button" class="button popup__button popup__button_disabled" >Зарегистрироваться</button>
                 </form>
                 <p class = "popup__bottom-text">или <button class="popup__link reg">Войти</button></p>
             </div>
@@ -222,7 +159,7 @@
             <div class = "popup__content">
                 <img src = "<%=require('./images/close.svg')%>" alt = "крестик закрытия" class="popup__close">
                 <h3 class = "popup__title">Пользователь успешно зарегистрирован!</h3>
-                <p class = "popup__bottom-text popup__bottom-text_type-success"><button class="popup__link">Выполнить вход</button></p>
+                <p class = "popup__bottom-text popup__bottom-text_type-success"><button class="popup__link success">Выполнить вход</button></p>
             </div>
         </section>
 
@@ -247,6 +184,27 @@
             </nav>
         </div>
     </footer>
+
+    <div class = "card card__template">
+      <div class = "card__bookmark">
+          <div class = "card__bookmark-pointer card__bookmark-pointer_normal"></div>
+          <div class = "card__submenu">
+              <p class = "card__submenu-text">Войдите, чтобы сохранять статьи</p>
+          </div>
+      </div>
+     <a class = "card__link" href = "" target="_blank">
+      <figure class = "card__image"></figure>
+      <div class = "card__text-content">
+          <p class = "card__date">2 августа, 2019</p>
+          <h3 class = "card__title">Национальное достояние – парки</h3>
+          <p class = "card__text">В 2016 году Америка отмечала важный юбилей:
+              сто лет назад здесь начала складыв...
+          </p>
+          <cite class = "card__source">Лента.ру</cite>
+      </div>
+     </a>
+  </div>
+
     <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 </html>

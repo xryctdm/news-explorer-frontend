@@ -1,22 +1,19 @@
-export default class PopupRegistration {
+export default class PopupSuccess {
   constructor(elem, openLink) {
     this.elem = elem;
-    this.openLink = openLink;
 
     this.addEvents();
   }
 
   open() {
-    this.elem.classList.remove('popup_registration');
+    this.elem.classList.remove('popup_success');
   }
 
   close() {
-    this.elem.classList.add('popup_registration');
+    this.elem.classList.add('popup_success');
   }
 
   addEvents() {
-
-    this.openLink.addEventListener('click', (event) =>{this.open(event)});
 
     this.elem.querySelector('.popup__close').addEventListener('click', () =>{this.close()});
     this.elem.addEventListener('click', (event) =>{
@@ -27,4 +24,3 @@ export default class PopupRegistration {
 
   }
 }
-
