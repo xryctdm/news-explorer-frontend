@@ -22,8 +22,6 @@
 
 ## Установка проекта
 
-[Установите node.js](https://nodejs.org/en/download)
-
 Скопируйте проект к себе на компьютер:
 ```
 git clone https://github.com/xryctdm/news-explorer-frontend.git
