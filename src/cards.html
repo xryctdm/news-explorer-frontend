@@ -17,117 +17,48 @@
     <header class="header">
         <p class = "header__logo header__logo_dark">NewsExplorer</p>
         <nav class = "header__navigation">
-            <a href = "./index.html" class = "header__nav-item header__nav-item_dark">Главная</a>
-            <a href = "./cards.html" class = "header__nav-item header__nav-item_dark">Сохранённые статьи</a>
-            <button class = "header__nav-button header__nav-button_dark" type="button">
-                <span class = "header__nav-button-content">Грета</span>
-                <img class = "header__logout-icon" src = "<%=require('./images/logout_dark.svg')%>" alt = "иконка выхода светлая">
-            </button>
-        </nav>
+          <a href = "./index.html" class = "header__nav-item header__nav-item_dark">Главная</a>
+          <a href = "./cards.html" class = "header__nav-item  header__nav-item_dark header__nav-item_saved-pages saved-pages header__nav-item_hidden">Сохранённые статьи</a>
+          <button class = "header__nav-button header__nav-button_dark header__nav-button_hidden profile" type="button">
+              <span class = "header__nav-button-content ">UserName</span>
+              <img class = "header__logout-icon" src = "<%=require('./images/logout_dark.svg')%>" alt = "иконка выхода светлая">
+          </button>
+          <button class = "header__nav-button auth" type="button">
+            <span class = "header__nav-button-content">Авторизоваться</span>
+        </button>
+      </nav>
         <img class = "header__menu-icon" src = "<%=require('./images/menu_dark.svg')%>" alt = "иконка меню темная">
-        <div class = "header__popup">
-            <div class = "header__popup-content">
-                <div class = "header__popup-title-container">
-                    <h3 class = "header__logo header__popup-title">NewsExplorer</h3>
-                    <img src = "<%=require('./images/close.svg')%>" alt = "крестик закрытия" class="header__popup-close">
-                </div>
-                <nav class = "header__popup-nav">
-                    <a href = "./index.html" class = "header__nav-item">Главная</a>
-                    <a href = "./cards.html" class = "header__nav-item">Сохранённые статьи</a>
-                    <button class = "header__nav-button" type="button">
-                        <span class = "header__nav-button-content">Грета</span>
-                        <img class = "header__logout-icon" src = "<%=require('./images/logout.svg')%>" alt = "иконка выхода">
+        <div class = "header__popup header__popup_close-state">
+          <div class = "header__popup-content">
+              <div class = "header__popup-title-container">
+                  <h3 class = "header__logo header__popup-title">NewsExplorer</h3>
+                  <img src = "<%=require('./images/close.svg')%>" alt = "крестик закрытия" class="header__popup-close-button">
+              </div>
+              <nav class = "header__popup-nav">
+                  <a href = "./index.html" class = "header__nav-item">Главная</a>
+                  <a href = "./cards.html" class = "header__nav-item saved-pages header__nav-item_hidden">Сохранённые статьи</a>
+                  <button class = "header__nav-button header__nav-button_hidden profile" type="button">
+                      <span class = "header__nav-button-content">UserName</span>
+                      <img class = "header__logout-icon" src = "<%=require('./images/logout.svg')%>" alt = "иконка выхода">
                   </button>
-                </nav>
-            </div>
-        </div>
+                  <button class = "header__nav-button auth" type="button">
+                    <span class = "header__nav-button-content">Авторизоваться</span>
+                </button>
+              </nav>
+          </div>
+      </div>
     </header>
 
     <main>
         <section class = "search-resume">
             <h3 class = "search-resume__subtitle">Сохранённые статьи</h3>
-            <h2 class = "section-title search-resume__title">Грета, у вас 5 сохранённых статей</h2>
-            <p class = "section-text search-resume__text">По ключевым словам: <b>Природа,</b> <b>Тайга</b> и <b>2 другим</b></p>
+            <h2 class = "section-title search-resume__title"><span id = "resume-name">Грета</span>, у вас <span id = "resume-quantity">5</span> сохранённых статей</h2>
+            <p class = "section-text search-resume__text">По ключевым словам: <b id = "tags">Природа, Тайга</b> <span id = "tags-and">и </span> <b id = "tags-more">2 другим</b></p>
         </section>
 
         <section class = "saved-cards">
             <div class = "cards-container">
-                <div class = "card">
-                    <div class = "card__tag">Природа</div>
-                    <div class = "card__bookmark">
-                        <div class = "card__bookmark-pointer card__bookmark-pointer_delete"></div>
-                        <div class = "card__submenu">
-                            <p class = "card__submenu-text">Убрать из сохранённых</p>
-                        </div>
-                    </div>
 
-                    <figure class = "card__image" style="background-image: url(./images/image_08.png)"></figure>
-                    <div class = "card__text-content">
-                        <p class = "card__date">2 августа, 2019</p>
-                        <h3 class = "card__title">Национальное достояние – парки</h3>
-                        <p class = "card__text">В 2016 году Америка отмечала важный юбилей:
-                            сто лет назад здесь начала складыв...
-                        </p>
-                        <cite class = "card__source">Лента.ру</cite>
-                      </div>
-                </div>
-                <div class = "card">
-                    <div class = "card__tag">Парки</div>
-                    <div class = "card__bookmark">
-                        <div class = "card__bookmark-pointer card__bookmark-pointer_delete"></div>
-                        <div class = "card__submenu">
-                            <p class = "card__submenu-text">Убрать из сохранённых</p>
-                        </div>
-                    </div>
-
-                    <figure class = "card__image"></figure>
-                    <div class = "card__text-content">
-                        <p class = "card__date">2 августа, 2019</p>
-                        <h3 class = "card__title">Национальное достояние – парки</h3>
-                        <p class = "card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад
-                        здесь начала складыв...
-                        </p>
-                        <cite class = "card__source">Лента.ру</cite>
-                    </div>
-                </div>
-                <div class = "card">
-                    <div class = "card__tag">Фотография</div>
-                    <div class = "card__bookmark">
-                        <div class = "card__bookmark-pointer card__bookmark-pointer_delete"></div>
-                        <div class = "card__submenu">
-                            <p class = "card__submenu-text">Убрать из сохранённых</p>
-                        </div>
-                    </div>
-
-                    <figure class = "card__image"></figure>
-                    <div class = "card__text-content">
-                        <p class = "card__date">2 августа, 2019</p>
-                        <h3 class = "card__title">Национальное достояние – парки</h3>
-                        <p class = "card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад
-                        здесь начала складыв...
-                        </p>
-                        <cite class = "card__source">Лента.ру</cite>
-                    </div>
-                </div>
-                <div class = "card">
-                    <div class = "card__tag">Природа</div>
-                    <div class = "card__bookmark">
-                        <div class = "card__bookmark-pointer card__bookmark-pointer_delete"></div>
-                        <div class = "card__submenu">
-                            <p class = "card__submenu-text">Убрать из сохранённых</p>
-                        </div>
-                    </div>
-
-                    <figure class = "card__image"></figure>
-                    <div class = "card__text-content">
-                        <p class = "card__date">2 августа, 2019</p>
-                        <h3 class = "card__title">Национальное достояние – парки</h3>
-                        <p class = "card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад
-                        здесь начала складыв...
-                        </p>
-                        <cite class = "card__source">Лента.ру</cite>
-                    </div>
-                </div>
             </div>
         </section>
     </main>
@@ -151,6 +82,28 @@
             </nav>
         </div>
     </footer>
+
+    <div class = "card card__template">
+      <div class = "card__tag">Природа</div>
+      <div class = "card__bookmark">
+          <div class = "card__bookmark-pointer card__bookmark-pointer_delete"></div>
+          <div class = "card__submenu">
+              <p class = "card__submenu-text">Убрать из сохранённых</p>
+          </div>
+      </div>
+      <a class = "card__link" href = "" target="_blank">
+      <figure class = "card__image" style="background-image: url(./images/image_08.png)"></figure>
+      <div class = "card__text-content">
+          <p class = "card__date">2 августа, 2019</p>
+          <h3 class = "card__title">Национальное достояние – парки</h3>
+          <p class = "card__text">В 2016 году Америка отмечала важный юбилей:
+              сто лет назад здесь начала складыв...
+          </p>
+          <cite class = "card__source">Лента.ру</cite>
+        </div>
+      </a>
+  </div>
+
     <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 

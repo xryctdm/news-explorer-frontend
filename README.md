@@ -6,15 +6,21 @@
 
 - HTML
 - CSS
+- JS
 - Webpack
 
 ## URL
 
 [ссылка на проект](https://xryctdm.github.io/news-explorer-frontend)
 
-## Установка проекта
+## Ссылки на сервер для проекта
 
-[Установите node.js](https://nodejs.org/en/download)
+* https://api.xryctdm-news-explorer.tk
+
+
+* http://84.201.173.24
+
+## Установка проекта
 
 Скопируйте проект к себе на компьютер:
 ```

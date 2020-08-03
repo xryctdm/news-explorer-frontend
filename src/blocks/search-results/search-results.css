@@ -1,9 +1,10 @@
 @import url("./__button/search-results__button.css");
 @import url("./__container/search-results__container.css");
 @import url("./__title/search-results__title.css");
+@import url("./__visible/search-results__visible.css");
 
 .search-results {
     background: #F5F6F7;
-    display: flex;
+    display: none;
     justify-content: center;
 }

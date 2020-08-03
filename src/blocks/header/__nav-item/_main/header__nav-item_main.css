@@ -1,0 +1,24 @@
+.header__nav-item.header__nav-item_main {
+  margin-top: 28px;
+  padding-bottom: 26px;
+  color: #FFFFFF;
+  border-bottom: 3px solid #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+  .header__nav-item.header__nav-item_main {
+      margin-top: 21px;
+      padding-bottom: 19px;
+      color: #FFFFFF;
+      border-bottom: 3px solid #FFFFFF;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header__nav-item.header__nav-item_main {
+      margin: 0;
+      padding: 0;
+      color: #FFFFFF;
+      border: none;
+  }
+}

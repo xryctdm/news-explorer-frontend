@@ -3,7 +3,7 @@
     border-radius: 80px;
     width: 288px;
     height: 64px;
-    margin: 64px auto 80px;
+    margin: 0px auto 80px;
 
     font-family: 'Roboto', Arial, sans-serif;
     font-style: normal;
@@ -19,12 +19,12 @@
 @media screen and (max-width: 768px) {
     .search-results__button {
         height: 56px;
-        margin: 32px auto 40px;
+        margin: 0 auto 40px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .search-results__button {
-        margin: 15px auto 32px;
+        margin: 0 auto 32px;
     }
 }
