@@ -21,6 +21,10 @@ export default class PopupSuccess {
         this.close();
       }
     });
-
+    document.addEventListener('keyup', (event) => {
+      if(event.key === 'Escape') {
+        this.close();
+      }
+    });
   }
 }

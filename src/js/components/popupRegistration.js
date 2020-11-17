@@ -24,7 +24,11 @@ export default class PopupRegistration {
         this.close();
       }
     });
-
+    document.addEventListener('keyup', (event) => {
+      if(event.key === 'Escape') {
+        this.close();
+      }
+    });
   }
 }
 
