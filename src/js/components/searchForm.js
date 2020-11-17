@@ -19,7 +19,8 @@ export default class SearchForm {
     return null;
   }
 
-  validate() {
+  validate(event) {
+    event.preventDefault();
     if (this.isValidInput() !== null) {
       this.setInputError();
         } else {
