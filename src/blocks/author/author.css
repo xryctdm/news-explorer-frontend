@@ -4,6 +4,8 @@
 @import url("../author/__container/author__container.css");
 
 .author {
+    max-width: 1440px;
+    margin: 0px auto;
     background: #FFFFFF;
     display: flex;
 }

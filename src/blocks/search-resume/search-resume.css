@@ -3,6 +3,8 @@
 @import url("./__text/search-resume__text.css");
 
 .search-resume {
+    max-width: 1440px;
+    margin: 0px auto;
     padding: 40px 104px 56px;
 }
 

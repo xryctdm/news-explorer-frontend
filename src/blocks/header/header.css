@@ -13,6 +13,8 @@
 @import url("./__popup-nav/header__popup-nav.css");
 
 .header {
+    max-width: 1440px;
+    margin: 0px auto;
     display: flex;
     justify-content: space-between;
     height: 80px;

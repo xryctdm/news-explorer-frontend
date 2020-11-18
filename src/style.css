@@ -20,7 +20,7 @@
 @import url("./blocks/saved-cards/saved-cards.css");
 
 .page {
-    max-width: 1440px;
+    max-width: 2560px;
     margin: 0px auto;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
