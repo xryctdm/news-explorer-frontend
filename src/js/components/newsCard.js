@@ -94,14 +94,16 @@ export default class NewsCard {
 
   addEvents() {
     this.template.querySelector('.card__bookmark-pointer').addEventListener('click', () => {
-      if(this.user.hasFavorites(this)) {
-        this.template.querySelector('.card__bookmark-pointer').classList.remove('card__bookmark-pointer_marked');
-        this.template.querySelector('.card__bookmark-pointer').classList.add('card__bookmark-pointer_normal');
-        this.user.removeFromFavorites(this);
-      } else {
-        this.template.querySelector('.card__bookmark-pointer').classList.add('card__bookmark-pointer_marked');
-        this.template.querySelector('.card__bookmark-pointer').classList.remove('card__bookmark-pointer_normal');
-        this.user.addToFavorites(this, this.searchInput.getValue());
+      if(!this.user.isGuest()) {
+        if(this.user.hasFavorites(this)) {
+          this.template.querySelector('.card__bookmark-pointer').classList.remove('card__bookmark-pointer_marked');
+          this.template.querySelector('.card__bookmark-pointer').classList.add('card__bookmark-pointer_normal');
+          this.user.removeFromFavorites(this);
+        } else {
+          this.template.querySelector('.card__bookmark-pointer').classList.add('card__bookmark-pointer_marked');
+          this.template.querySelector('.card__bookmark-pointer').classList.remove('card__bookmark-pointer_normal');
+          this.user.addToFavorites(this, this.searchInput.getValue());
+        }
       }
     })
   }
