@@ -5,3 +5,8 @@
 @import url("./__image-link/footer__image-link.css");
 @import url("./__text-link-container/footer__text-link-container.css");
 @import url("./__navigation/footer__navigation.css");
+
+.footer {
+    max-width: 1440px;
+    margin: 0px auto;
+}

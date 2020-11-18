@@ -4,8 +4,10 @@
 @import url("./__text/no-results__text.css");
 
 .no-results {
-	display: none;
-	margin: 0;
-	height: 374px;
+    max-width: 2560px;
+    margin: 0px auto;
+	  display: none;
+	  margin: 0;
+	  height: 374px;
     background: #F5F6F7;
 }
