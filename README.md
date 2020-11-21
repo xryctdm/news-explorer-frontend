@@ -18,7 +18,7 @@
 
 ## URL
 
-[ссылка на проект](https://xryctdm.github.io/news-explorer-frontend)
+* https://xryctdm-news-explorer.tk
 
 ## Ссылки на сервер для проекта
 
