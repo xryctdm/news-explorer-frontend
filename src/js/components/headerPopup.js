@@ -19,5 +19,15 @@ export default class HeaderPopup {
   addEvents() {
     this.openButton.addEventListener('click', (event) =>{this.open(event)});
     this.closeButton.addEventListener('click', (event) =>{this.close(event)});
+    document.addEventListener('keyup', (event) => {
+      if(event.key === 'Escape') {
+        this.close();
+      }
+    });
+    this.elem.addEventListener('click', (event) => {
+      if (!event.target.classList.contains('header__popup-content')) {
+        this.close();
+      }
+    });
   }
 }
