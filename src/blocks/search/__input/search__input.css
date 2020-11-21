@@ -1,4 +1,5 @@
 .search__input {
+    position: relative;
     margin-top: 64px;
     width: 608px;
     height: 64px;
